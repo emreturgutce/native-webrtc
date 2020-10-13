@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Native WebRTC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native WebRTC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-  <div>
-    <video autoPlay muted id="user-video"></video>
-    <video autoPlay id="partner-video" ></video>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
-  <script>
-    const roomId = '<%= roomId %>';
-  </script>
-  <script defer src="/script.js"></script>
+    <div class="container">
+        <div class="row">
+            <video class="col" autoPlay muted id="user-video"></video>
+            <video class="col" autoPlay id="partner-video"></video></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js "></script>
+    <script>
+        const roomId = '<%= roomId %>';
+    </script>
+    <script defer src="/script.js "></script>
 </body>
+
 </html>
